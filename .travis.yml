@@ -80,10 +80,6 @@ matrix:
       env: BUILD_TYPE=coverage COVERALLS_TOKEN="Dy94SOU3ajc1VbIy1wnWaNaeIUzfgdtEg"
       compiler: gcc
 
-branches:
-  only:
-  - master
-
 before_install:
   - |
     if [ "x${BUILD_TYPE}" == "xcoverage" ]; then
